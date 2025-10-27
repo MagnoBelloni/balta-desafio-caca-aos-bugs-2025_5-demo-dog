@@ -10,18 +10,12 @@ jobs:
 
     steps:
       - name: Checkout main branch
-        uses: actions/checkout@v4
+        uses: actions/checkout
 
       - name: Install .NET
-        uses: actions/setup-dotnet@v2
+        uses: actions/setup-dotnet
         with:
           dotnet-version: "10.0.100-rc.2.25502.107"
 
-      - name: Restore dependencies
-        run: dotnet restore ./src
-
-      - name: Build with dotnet
-        run: dotnet build --no-restore --configuration Release ./src
-
-      - name: Tests
-        run: dotnet test --no-build ./src
+      - name: Build & Tests
+        run: dotnet test ./src
