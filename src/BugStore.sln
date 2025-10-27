@@ -23,9 +23,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Infrastructure", "02. I
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Application", "03. Application", "{1AE9CA4D-FAE8-4F00-96B6-7711601BAD2E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00. SolutionItems", "00. SolutionItems", "{C683ECDC-F17C-45E7-B4FF-396AA0B8CED5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B6D1F020-1F1F-4D8E-9840-0902DA0C0B05}"
 	ProjectSection(SolutionItems) = preProject
 		..\.verify = ..\.verify
+		..\.github\workflows\main.yaml = ..\.github\workflows\main.yaml
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject

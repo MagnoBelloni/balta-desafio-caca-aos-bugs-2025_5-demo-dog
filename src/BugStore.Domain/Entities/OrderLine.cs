@@ -4,7 +4,7 @@ public class OrderLine : BaseEntity
 {
     public OrderLine()
     {
-        
+
     }
 
     public OrderLine(int quantity, Guid productId, Product product)

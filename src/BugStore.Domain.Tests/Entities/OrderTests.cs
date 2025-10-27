@@ -29,7 +29,7 @@ namespace BugStore.Domain.Tests.Entities
             expectedTotal += productQuantity2 * priceProduct2;
 
             var order = new Order(Guid.NewGuid(), [orderLine1, orderLine2]);
-            
+
             order.TotalAmount.Should().Be(expectedTotal);
         }
     }

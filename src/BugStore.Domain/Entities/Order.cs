@@ -4,7 +4,7 @@ public class Order : BaseEntity
 {
     public Order()
     {
-        
+
     }
 
     public Order(Guid customerId, List<OrderLine> lines)
