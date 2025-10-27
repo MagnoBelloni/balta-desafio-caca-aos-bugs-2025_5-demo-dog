@@ -10,12 +10,12 @@ jobs:
 
     steps:
       - name: Checkout main branch
-        uses: actions/checkout
+        uses: actions/checkout@v4
 
       - name: Install .NET
         uses: actions/setup-dotnet
         with:
           dotnet-version: "10.0.100-rc.2.25502.107"
 
-      - name: Build & Tests
+      - name: Build And Tests
         run: dotnet test ./src
