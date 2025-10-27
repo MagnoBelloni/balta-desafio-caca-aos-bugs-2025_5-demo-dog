@@ -19,6 +19,7 @@ jobs:
 
       - name: Restore dependencies
         run: dotnet restore ./src
+
       - name: Build with dotnet
         run: dotnet build --no-restore --configuration Release ./src
 
